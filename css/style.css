@@ -1,0 +1,286 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    color: #222222;
+    font-family: 'Pretendard';
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+.header{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  /*항목의 사이공간을 균등하게 분배 */
+    align-items: center;
+}
+
+.logo{
+    font-size: 1.3rem;   /* 1rem-16px  2rem-32px */
+    font-weight: bold;
+    float: left;
+}
+
+.links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.links li{
+   margin-left: 30px;
+}
+
+.links a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text1{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation:fade-1 2s linear forwards alternate;
+    text-align: center;
+  }
+
+  .text1 {animation-delay:0s;}
+  @keyframes fade-1 {
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+    60% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.text2{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation:fade-1 6s linear forwards alternate;
+    text-align: center;
+}
+
+  .text2 {animation-delay:0s;}
+  @keyframes fade-1 {
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+    60% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+section{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.title{
+    background-image: url(../images/main.png);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.textbox{
+    margin: 3rem;
+    white-space: nowrap;
+}
+
+.text1{
+    font-size: 2rem;
+}
+
+.text2{
+    font-size: 5rem;
+    margin: 1.5rem;
+}
+
+.text-p{
+    line-height: 1.4;
+    font-size: 1.2rem;
+    margin-top: 17.5rem;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation:fade-1 10s linear forwards alternate;
+    text-align: center;
+    font-weight: 700;
+}
+
+.text-p{animation-delay:0s;}
+@keyframes fade-1 {
+  0% {opacity: 0;}
+  40% {opacity: 0;}
+  60% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+.second{
+    background-image: url(../images/sec.png);
+}
+
+.scroll_on.type_left{
+    line-height: 1.4;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    white-space: nowrap;
+    font-weight: 700;
+    color: #fff;
+}
+
+.scroll_wrap {overflow: hidden;}
+.scroll_on {padding:50px 0;font-size: 24px; font-weight:700; opacity: 0;transition: all 1s;}
+.scroll_on.active {opacity: 1 !important;transform: translate(0, 0) !important;}
+.scroll_on.type_left {transform: translate(-50px, 0);}
+.scroll_on.type_bottom{transform: translate(0, 50px);}
+
+.btn{
+    text-align: center;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation:fade-1 10s linear forwards alternate;
+    text-align: center;
+}
+
+.appbtn,
+.goobtn{
+    vertical-align: middle;
+}
+
+.dl-btn{
+    border: none;
+    margin: 40px 10px 0 0;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    font-family: 'inter', cursive;
+    font-weight: bold;
+    color: #222222;
+}
+
+.dl-btn:hover{
+    background-color: #4c6b85;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .text1{
+        font-size: 1rem;
+    }
+
+    .text2{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .text_p{
+        font-size: 1rem;
+        margin-bottom: 100%;
+    }
+
+    .scroll_on.type_left{
+        font-size: 1rem;
+}
+
+.links li{
+    font-size: .8rem;
+}
+
+.logo{
+    font-size: .8rem;
+}
+
+}
+
+section {
+    width: 100%; /* section의 크기를 원하는 대로 설정 */
+    height: 1000px; /* 예: section의 높이 설정 */
+    overflow: hidden; /* 이미지가 넘치지 않도록 설정 */
+  }
+  
+  section .bubble{
+    width: 70%; /* section의 너비에 맞춤 */
+    height: auto; /* 이미지 비율 유지 */
+  }
+
+  .imgbub{
+    text-align: center;
+  }
+
+  .third{
+    background-image: url(../images/c.png);
+    text-align: center;
+    padding-top: 7%;
+  }
+
+  .scroll_on.type_bottom{
+    color: #fff;
+    line-height: 1.5;
+    font-size: 2.5rem;
+  }
+
+  #product{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   /*  padding: 60px 20px;
+    text-align: center; */
+}
+
+.product-card{
+    background-color: #ffffff;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card  img{
+    border-radius: 10px;
+    width: 300px;
+}
